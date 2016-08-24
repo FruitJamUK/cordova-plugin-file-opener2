@@ -10,7 +10,8 @@
     </engines>
 
     <js-module src="www/plugins.FileOpener2.js" name="FileOpener2">
-        <clobbers target="cordova.plugins.fileOpener2" />
+        <clobbers target="cordova.openExternal" />
+        <clobbers target="cordova.file.openExternal" />
     </js-module>
 
     <!-- Android -->
