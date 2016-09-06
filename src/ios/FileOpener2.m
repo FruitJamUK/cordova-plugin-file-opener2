@@ -41,8 +41,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     
     CGRect rect;
     if (3 >= [command.arguments count]) {
-        NSArray *positionValues = command.arguments[2];
-        rect = CGRectMake(0,0,[[positionValues objectAtIndex:0] floatValue],[[positionValues objectAtIndex:1] floatValue]);
+        NSArray *positionScales = command.arguments[2];
+        CGFloat x = ([UIScreen mainScreen].bounds.size.width)*[[positionScales objectAtIndex:0] floatScale];
+        CGFloat y = ([UIScreen mainScreen].bounds.size.height)*[[positionScales objectAtIndex:1] floatScale];
+        rect = CGRectMake(x,y, 1000.0f, 150.0f);
       } else {
         rect = CGRectMake(0, 0, 1000.0f, 150.0f);
      }
