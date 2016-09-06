@@ -31,7 +31,7 @@ Usage
         } 
     );
     
-`position` array of coordinates from top-left device screen, use for iOS dialog positioning
+`position` array of floats between 0 and 1 representing where on the screen from left-to-right and top-to-bottom, used for iOS dialog positioning by scale
 
 Examples
 --------
