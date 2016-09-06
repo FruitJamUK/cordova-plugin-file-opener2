@@ -44,7 +44,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         NSArray *positionScales = command.arguments[2];
         CGFloat x = ([UIScreen mainScreen].bounds.size.width)*[[positionScales objectAtIndex:0] floatValue];
         CGFloat y = ([UIScreen mainScreen].bounds.size.height)*[[positionScales objectAtIndex:1] floatValue];
-        rect = CGRectMake(x,y, 1000.0f, 150.0f);
+        rect = CGRectMake(x,y, 1.0f, 1.0f);
       } else {
         rect = CGRectMake(0, 0, 1000.0f, 150.0f);
      }
